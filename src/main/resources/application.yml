@@ -3,7 +3,7 @@ server:
 
 spring:
     application:
-        name: CONFIG-SERVICE
+        name: config-service
     profiles:
         active: git
     cloud:
@@ -11,9 +11,8 @@ spring:
             server:
                 git:
                     uri: https://github.com/dvazquez1027/configuration.git
-                    clone-on-start: true
-                    search-paths:
-                    - "*"
+                    cloneOnStart: true
+                    searchPaths: '{application}'
 
 eureka:
   client:
