@@ -10,7 +10,7 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/dvazquez1027/configuration.git
+                    uri: https://github.com/dvazquez1027/microservices-demo-configuration.git
                     cloneOnStart: true
                     searchPaths: '{application}'
 
